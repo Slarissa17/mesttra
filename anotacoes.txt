@@ -1,0 +1,31 @@
+O node é um conjunto de especificações e configurações que fazem o js rodar no servidor.
+É basicamente uma linguagem de programação (js) que roda do lado do servidor.
+O node é single thread (computing the execution of an entire task from beginning to end without interruption)
+
+
+
+
+Cliente     ->      internet    ->      servidor
+
+
+* Cliente -> pode ser diversos tipos de Cliente como um smartphone, um desktop (é onde vai rodar o front end)
+* Server(servidor) -> é onde roda o backend, o banco de dados;
+* O cliente e o servidor se comunicam através da internet e protocolos, entre cliente e servidor geralmente por protocolo http
+Toda essa comunicação é feita por uma inteface chamada API (Application Programming inteface)
+
+Quando um cliente faz uma solicitação para o servidor chamamos de REQUISIÇÃO (REQUEST).
+Quando o servidor retorna algo para o cliente chamamos de RESPOSTA (RESPONSE).
+
+--- EXEMPLO ---
+Uma tela de cadastro de usuários, onde desejo enviar uma requisição pro backend para cadastrar usuários.
+Enviamos uma requisição http, no corpo da requisição tem os meus dados.
+
+
+-- EXPRESS --
+    É um framework web rápido, flexível e minimalista para node.js (deixa pronto a esturura de um servidor http)
+
+O node modules é a pasta onde está todas as dependencias
+o package.json é relacionado ao projeto (cuida da versão, nome e etc)
+o package-lock cuida de todas as dependencias
+
+A comunicação mais utilizada para a troca de dados é o json (javascript object notation) - é uma abstração dos objetos do js feita pra comunicação web (principalmente http).

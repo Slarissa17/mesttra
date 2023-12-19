@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        try{
+            var num = 10;
+
+            // Assim que uma exceção é encontrada automaticamente a execução do bloco de comando é interrompido
+            num = prompt("Digite um valor");
+            if(num > 10){
+                throw new Error("Valor inválido")
+            }
+
+            document.write("Aprendendo tratamento de exceçoes");
+            document.writi("Criando um exceção para cair no bloco catch");
+            document.write("Testando o próximo comando");
+        }
+        catch(e){
+            document.write("ERRO")
+            console.log("Mensagem de erro: " + e.message);
+
+        } 
+        finally{
+            document.write("Fim do tratamento")
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
